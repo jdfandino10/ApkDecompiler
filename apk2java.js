@@ -18,11 +18,11 @@ function main() {
   console.log('--------------------------------');
   if (process.argv.length != 4) {
     console.log('Missing arguments: This program recieves the apkSource and the destination folder');
+    console.log('--------------------------------');
     return;
   }
   var apkSource = process.argv[2];
   var destination = process.argv[3];
-  console.log(process.argv);
   decompile(apkSource, destination);
 }
 
