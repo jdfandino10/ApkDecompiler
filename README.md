@@ -6,7 +6,7 @@ Clone the repository. Run
 `npm install`
 to install dependencies.
 
-Now simply run `npm run [apk location] [destination folder]`.
+Now simply run `npm start [apk location] [destination folder]`.
 
 Results will be saved on the destination folder with the following structure:
 * _**classFiles**_: Folder with the _jar_ files and decompressed jars (_class_ files) of the APK.
