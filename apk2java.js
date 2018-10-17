@@ -8,7 +8,9 @@ const SMALI = 'smali';
 const JAVA_BINARY = 'classFiles';
 const JAVA = 'java';
 
-const DEX2JAR = path.join(__dirname, 'library', 'dex2jar-2.0', 'd2j-dex2jar.bat');
+let extension = process.platform === 'win32' ? '.bat' : '.sh';
+
+const DEX2JAR = path.join(__dirname, 'library', 'dex2jar-2.0', 'd2j-dex2jar' + extension);
 const DEX2SMALI = 'java -jar ' + path.join(__dirname, 'library', 'smali', 'baksmali-2.2.5.jar') + ' d';
 const CLASS2JAVA = 'java -jar ' + path.join(__dirname, 'library', 'procyon', 'decompiler.jar')
 
